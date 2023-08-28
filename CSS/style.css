@@ -1,0 +1,27 @@
+/* CSS PARA DEFINIR PROPRIEDADES PRINCIPAIS */
+@import url(header.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+:root {
+    --preto: #000;
+    --branco: #fff;
+    --laranja: #FF7805;
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+section {
+    padding: 10rem 15% 10rem;
+}

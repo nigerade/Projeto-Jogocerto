@@ -1,0 +1,28 @@
+@media (max-width: 840px) {
+    #header__menu {
+        display: block;
+    }
+
+    .navlist__header {
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        transition: all .45s ease;
+    }
+
+    .navlist__header a {
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--preto);
+    }
+
+    .navlist__header.open {
+        top: 100%;
+    }
+}
