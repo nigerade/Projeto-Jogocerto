@@ -1,0 +1,15 @@
+#main__fundo {
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 100%;
+    margin-top: 5%;
+    filter: blur(2px);
+}
+
+#main__home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

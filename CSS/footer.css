@@ -1,0 +1,59 @@
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: var(--cor-rodape);
+    height: 30vh;
+}
+
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.redes__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 300px;
+}
+
+.redes__circulo {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #dddddd;
+}
+
+.redes__icones {
+    height: 50px;
+    margin: auto;
+    color: black;
+}
+
+.sobre__itens {
+    display: flex;
+    gap: 2rem;
+}
+
+.sobre__link {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+.sobre__link:hover {
+    color: #ffffff;
+}
+
+.sobre__direitos {
+    color: #ddd;
+    margin-top: 1rem;
+}

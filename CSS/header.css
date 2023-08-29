@@ -13,7 +13,6 @@
     border-bottom: 1px solid transparent;
     background-color: var(--branco);
     padding: 0 5%;
-    box-shadow: 2px 2px 2px #ccc;
     font-family: Roboto;
 }
 
@@ -36,11 +35,7 @@
 }
 
 .header__logo {
-    width: 100%;
-}
-
-.header__losango {
- 
+    width: 60%;
 }
 
 #header__menu {
