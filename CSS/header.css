@@ -1,58 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --cor-princial-header: #323232;
+    --cor-secundaria-header: #FF7805;
+    --cor-font-principal-header: #ffffff;
+    --cor-font-secundaria-header: #323232;
+    --cor-font-hover-header: #747474;
+}
 
-#header {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logotipo{
+    height: 9.9vh;
+}
+.header {
     position: fixed;
+    background-color: var(--cor-princial-header);
+    padding-inline: 10px;
     width: 100%;
-    height: 9rem;
-    top: 0;
-    right: 0;
-    z-index: 1;
+}
+.div__header{
+    display: flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all .45s ease;
-    border-bottom: 1px solid transparent;
-    background-color: var(--branco);
-    box-shadow: 2px 2px 2px #ccc;
-    font-family: Roboto;
+    gap: 32px;
 }
 
-.navlist__header {
+.nav {
+    max-width: 90%;
+    height: 10vh;
+    margin-inline: auto;
+
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navlist__header a {
-    color: var(--preto);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 0 0.5rem;
-    transition: all .45s ease;
-    margin-right: 3rem;
+.nav__list{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
 }
 
-.navlist__header a:hover {
-    transition: all .45s ease;
-    color: var(--laranja);
+.nav__list a{
+    color: var(--cor-font-principal-header);
+    font-size: 19px
+}
+.nav__list a:hover{
+    color: var(--cor-font-hover-header);
 }
 
-.header__logo {
-    width: 10rem;
-    margin-left: 6rem;
-    position: relative;
+.cadastro{
+    padding: 1em;
+    background-color: var(--cor-secundaria-header);
+    border-radius: 10%;
 }
 
-.header__losango {
-    width: 22rem;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-}
-
-#header__menu {
-    font-size: 4rem;
-    color: var(--preto);
-    z-index: 2;
-    cursor: pointer;
-    display: none;
+.cadastro a{
+    color: var(--cor-font-secundaria-header);
 }
