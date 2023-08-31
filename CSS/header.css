@@ -2,7 +2,7 @@
 
 a {
     text-decoration: none;
-    font-family: Roboto;
+    font-family: Roboto !important;
 }
 
 .logotipo {
@@ -14,6 +14,7 @@ a {
     background-color: var(--cor-principal-header);
     padding-inline: 10px;
     width: 100%;
+    z-index: 1000;
 }
 
 .div__header {
@@ -34,28 +35,45 @@ a {
     align-items: center;
 }
 
-.nav__list {
+.navlist__header {
     display: flex;
     gap: 32px;
     list-style: none;
     align-items: center;
 }
 
-.nav__list a {
+.navlist__header a {
     color: var(--cor-font-principal-header);
-    font-size: 19px
+    font-size: 19px;
+    transition: all .45s ease;
 }
 
-.nav__list a:hover {
+.navlist__header a:hover {
     transition: all .45s ease;
-    color: var(--cor-font-hover-header);
+    color: var(--laranja);
 }
 
 .cadastro {
     padding: 1em;
-    background-color: var(--cor-secundaria-header);
+    background-color: var(--laranja);
+    border-radius: 0.5rem;
 }
 
 .cadastro a {
     color: var(--cor-font-secundaria-header);
+}
+
+.cadastro a:hover {
+    transition: all .45s ease;
+    color: var(--branco);
+}
+
+#header__menu {
+    /* estilo do menu hamburguer (icone) */
+    font-size: 3rem;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
 }
