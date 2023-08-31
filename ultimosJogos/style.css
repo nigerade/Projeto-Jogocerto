@@ -1,0 +1,81 @@
+:root{
+    --cor-rodape:#323232;
+}
+
+.ultimos{
+    width: 80%;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    
+}
+
+.ultimos__jogo{
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    min-width: 600px;
+    padding: 16px;
+}
+
+.ultimos__jogo p{
+    margin: 0;
+}
+
+
+
+.ultimos__mandante{
+    display: flex;
+    align-items: center;
+}
+
+.ultimos__time{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.ultimos__imagem{
+    height: 120px;
+}
+
+.ultimos__resultado{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.ultimos__placar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ultimos .data{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.ultimos .localizacao{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.ultimos__quadro{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+
+
+.ultimos__visitante{
+    display: flex;
+    align-items: center;
+}
