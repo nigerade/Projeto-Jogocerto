@@ -71,7 +71,7 @@ a {
 #header__menu {
     /* estilo do menu hamburguer (icone) */
     font-size: 3rem;
-    color: var(--text-color);
+    color: var(--laranja);
     z-index: 10001;
     cursor: pointer;
     margin-left: 25px;
