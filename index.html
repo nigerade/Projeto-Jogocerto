@@ -26,7 +26,7 @@
 
                 <ul class="navlist__header">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Ranking</a></li>
+                    <li><a href="#Ranking">Ranking</a></li>
                     <li><a href="#">Jogos</a></li>
                     <li><a href="#">Suporte</a></li>
                 </ul>
@@ -36,7 +36,7 @@
                 <li><a href="#">Login</a></li>
 
                 <div class="cadastro">
-                    <li><a href="#">Cadastre-se</a></li>
+                    <li><a href="HTML/Bem-vindos.html">Cadastre-se</a></li>
                 </div>
             </ul>
 
@@ -49,33 +49,174 @@
 
 
     <!-- COMEÇO SECTION PRINCIPAL -->
-    <section>
+    <section id="home">
         <div class="slideshow-container">
-
-            <div class="text">Seja Bem-Vindo ao JogoCerto!</div>
-
             <div class="mySlides fade">
-                <img class="carrossel" src="IMAGES/estadio1.jpg">
+                <div class="text">Seja Bem-Vindo ao JogoCerto!</div>
+                <img class="carrossel" src="IMAGES/estadio1.jpg" />
             </div>
 
             <div class="mySlides fade">
-                <img class="carrossel" src="IMAGES/bola.jpg">
+                <div class="text">Jogue e ganhe campeonatos!</div>
+                <img class="carrossel" src="IMAGES/bola.jpg" />
             </div>
 
             <div class="mySlides fade">
-                <img class="carrossel" src="IMAGES/bola.jpg">
+                <div class="text">Al Mossar campeão da Liga 2023!</div>
+                <img class="carrossel" src="IMAGES/bola.jpg" />
             </div>
 
             <div class="dot__buttons">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
+        </div>
+    </section>
 
+    <section id="Ranking">
+        <div class="ranking__titulo">MELHORES RANKEADOS</div>
+
+        <table class="ranking">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Time</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1°</th>
+                    <th>Al Mossar</th>
+                    <th>48</th>
+                </tr>
+                <tr>
+                    <th>2°</th>
+                    <th>Bar de Munique</th>
+                    <th>46</th>
+                </tr>
+                <tr>
+                    <th>3°</th>
+                    <th>Atlético Maneiro</th>
+                    <th>43</th>
+                </tr>
+                <tr>
+                    <th>4°</th>
+                    <th>Barra Leverkusen</th>
+                    <th>39</th>
+                </tr>
+                <tr>
+                    <th>5°</th>
+                    <th>Corinthians Cabeçuda</th>
+                    <th>37</th>
+                </tr>
+                <tr>
+                    <th>6°</th>
+                    <th>Manchester Cachaça</th>
+                    <th>34</th>
+                </tr>
+                <tr>
+                    <th>7°</th>
+                    <th>Real Matismo</th>
+                    <th>33</th>
+                </tr>
+                <tr>
+                    <th>8°</th>
+                    <th>MeiaBoca Juniors</th>
+                    <th>27</th>
+                </tr>
+                <tr>
+                    <th>9°</th>
+                    <th>Real Madruga</th>
+                    <th>23</th>
+                </tr>
+                <tr>
+                    <th>10°</th>
+                    <th>Shaktar Dos Leks</th>
+                    <th>12</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="ranking__pagina">
+            <a id="nocolor" href="#">Ranking Completo<i id="icon" class="bx bx-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <section id="Jogos">
+        <div class="agenda__titulo">
+            <h1 id="agenda__titulo__h1">Agenda de Jogos</h1>
+
+            <div class="jogos__agenda">
+                <div class="jogos__marcados">
+
+                    <div class="time__mandante">
+                        <div class="time__texto">ALM</div>
+                        <img class="logotime" src="IMAGES/almossar.png">
+                    </div>
+
+                    <i class='bx bx-x' id="jogos__marcados__X"></i>
+
+                    <div class="time__visitante">
+                        <img class="logotime" src="IMAGES/almossar.png">
+                        <div class="time__texto">ALM</div>
+                    </div>
+
+                </div>
+
+                <div class="jogos__marcados">
+
+                    <div class="time__mandante">
+                        <div class="time__texto">ALM</div>
+                        <img class="logotime" src="IMAGES/almossar.png">
+                    </div>
+
+                    <i class='bx bx-x' id="jogos__marcados__X"></i>
+
+                    <div class="time__visitante">
+                        <img class="logotime" src="IMAGES/almossar.png">
+                        <div class="time__texto">ALM</div>
+                    </div>
+
+                </div>
+
+                <div class="jogos__marcados">
+
+                    <div class="time__mandante">
+                        <div class="time__texto">ALM</div>
+                        <img class="logotime" src="IMAGES/almossar.png">
+                    </div>
+
+                    <i class='bx bx-x' id="jogos__marcados__X"></i>
+
+                    <div class="time__visitante">
+                        <img class="logotime" src="IMAGES/almossar.png">
+                        <div class="time__texto">ALM</div>
+                    </div>
+
+                </div>
+
+                <div class="jogos__marcados">
+
+                    <div class="time__mandante">
+                        <div class="time__texto">ALM</div>
+                        <img class="logotime" src="IMAGES/almossar.png">
+                    </div>
+
+                    <i class='bx bx-x' id="jogos__marcados__X"></i>
+
+                    <div class="time__visitante">
+                        <img class="logotime" src="IMAGES/almossar.png">
+                        <div class="time__texto">ALM</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
         </div>
 
-        <div class="text__ranking">Melhores Rankeados</div>
-        <div class="ranking">Melhores Rankeados</div>
     </section>
     <!-- FIM SECTION PRINCIPAL -->
 

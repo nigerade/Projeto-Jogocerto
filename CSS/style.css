@@ -25,7 +25,3 @@ body {
     color: var(--preto);
     position: relative;
 }
-
-section {
-    padding: 10rem 15% 10rem;
-}

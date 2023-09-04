@@ -1,0 +1,89 @@
+.ultimos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+
+.ultimos__jogo {
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    padding: 16px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}  
+
+.subtitulo {
+    font-size: 1.9rem;
+    font-weight: 500;
+    font-family: Roboto;
+    margin-bottom: 1.5rem;
+}
+
+.ultimos__jogo p {
+    margin: 0;
+}
+
+.ultimos__mandante {
+    display: flex;
+    align-items: center;
+}
+
+.ultimos__time {
+    font-size: 1.2rem;
+    font-family: Roboto;
+}
+
+.ultimos__imagem {
+    height: 120px;
+}
+
+.ultimos__resultado {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ultimos__placar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    margin-bottom: 2rem;
+}
+
+.ultimos__placar__texto {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.ultimos .data {
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.ultimos .localizacao {
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.ultimos__quadro {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.ultimos__visitante {
+    display: flex;
+    align-items: center;
+}

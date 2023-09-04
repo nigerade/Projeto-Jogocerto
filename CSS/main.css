@@ -1,90 +1,216 @@
+@import url(style.css);
+
+a {
+  text-decoration: none;
+  font-family: Roboto !important;
+}
+
 .mySlides {
-    display: none;
-    filter: blur(2px);
+  display: none;
 }
 
 .carrossel {
-    vertical-align: middle;
-    width: 100%;
-    height: 95vh;
+  vertical-align: middle;
+  width: 100%;
+  filter: blur(2px);
+  height: 95vh;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    width: 100%;
-    position: relative;
-    margin: auto;
-
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  position: relative;
+  margin: auto;
 }
 
 /* Caption text */
 .text {
-    color: #ffffff;
-    font-size: 4rem;
-    font-weight: 800;
-    padding: 8px 12px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 16rem;
-    font-family: Roboto;
-    text-shadow: 1px 2px 4px #000000;
-    z-index: 1;
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 800;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 16rem;
+  font-family: Roboto;
+  text-shadow: 1px 2px 4px #000000;
+  z-index: 1;
 }
 
 .dot__buttons {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 1rem;
-    z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 1rem;
+  z-index: 3;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 0.5rem;
-    transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-    background-color: #ff7300;
+.active {
+  background-color: #ff7300;
 }
 
 /* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {
-        opacity: 0.4;
-    }
+  from {
+    opacity: 0.4;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
 
-    .prev,
-    .next,
-    .text {
-        font-size: 11px;
-    }
+.ranking__titulo {
+  font-size: 2rem;
+  margin: 6rem 0 2rem 0;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  font-family: Roboto;
+}
+
+.ranking {
+  min-width: 600px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  font-family: Roboto;
+}
+
+.ranking thead tr {
+  background-color: #ff7300;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.ranking th,
+.ranking td {
+  padding: 0.9rem 1rem;
+}
+
+.ranking tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.ranking tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.ranking__pagina {
+  text-align: right;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icon {
+  font-size: 2rem;
+  align-items: center;
+}
+
+#nocolor {
+  text-decoration: none;
+  color: #000000;
+}
+
+.agenda__titulo {
+  width: 90%;
+  height: 80%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  text-align: center;
+  font-family: Roboto;
+  margin-top: 10%;
+}
+
+#agenda__titulo__h1 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.jogos__agenda {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+}
+
+.jogos__titulo {
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 0;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  font-family: Roboto;
+}
+
+.jogos__marcados {
+  width: 450px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 2rem;
+}
+
+#jogos__marcados__X {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logotime {
+  width: 8rem;
+  height: auto;
+}
+
+.time__mandante{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.time__visitante{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-right: 1rem;
 }
