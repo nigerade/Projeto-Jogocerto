@@ -97,7 +97,7 @@ a {
 }
 
 .ranking {
-  min-width: 600px;
+  width: 600px;
   border: 1px solid #ccc;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
@@ -166,6 +166,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   grid-template-columns: repeat(2, 2fr);
   align-items: center;
 }
@@ -180,8 +181,8 @@ a {
 }
 
 .jogos__marcados {
-  width: 450px;
-  height: 150px;
+  width: 395px;
+  height: 100px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -197,7 +198,7 @@ a {
 }
 
 .logotime {
-  width: 8rem;
+  width: 6rem;
   height: auto;
 }
 
@@ -213,4 +214,95 @@ a {
   align-items: center;
   padding: 1rem;
   margin-right: 1rem;
+}
+
+.ultimos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+
+}
+
+.ultimos__jogo {
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  padding: 16px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}  
+
+.subtitulo {
+  font-size: 1.9rem;
+  font-weight: 500;
+  font-family: Roboto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ultimos__jogo p {
+  margin: 0;
+}
+
+.ultimos__mandante {
+  display: flex;
+  align-items: center;
+}
+
+.ultimos__time {
+  font-size: 1.2rem;
+  font-family: Roboto;
+}
+
+.ultimos__imagem {
+  height: 120px;
+}
+
+.ultimos__resultado {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ultimos__placar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  margin-bottom: 2rem;
+}
+
+.ultimos__placar__texto {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ultimos .data {
+  font-size: .9rem;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
+.ultimos .localizacao {
+  font-size: .9rem;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
+.ultimos__quadro {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.ultimos__visitante {
+  display: flex;
+  align-items: center;
 }

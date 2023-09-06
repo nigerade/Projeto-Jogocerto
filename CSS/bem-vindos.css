@@ -1,0 +1,70 @@
+@import url(style.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 7%;
+    padding-bottom: 15%;
+    position: relative;
+}
+
+.textos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Roboto;
+    gap: 10px;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passos {
+    width: 100%;
+    align-items: left;
+}
+
+.passos h3 {
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.titulo {
+    font-size: 4em;
+    padding-bottom: 1em;
+}
+
+.sub__titulo {
+    font-size: 3rem;
+    padding-bottom: 2em;
+}
+
+.destaque {
+    color: var(--laranja);
+}
+
+.jogocs {
+    width: 70%;
+    z-index: 1;
+}
+.jogocs1{
+    width: 75%;
+    filter: blur(1.5rem);
+    position: absolute;
+    z-index: 0;
+}
+.ilustrativa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}

@@ -2,13 +2,14 @@
 
 .rodape {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     bottom: 0;
     position: absolute;
     background-color: var(--cor-rodape);
-    height: 30vh;
+    flex-wrap: wrap;
+    padding: 1% 0;
 }
 
 .rodape__container {
@@ -16,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .redes__container {
@@ -25,37 +27,55 @@
     justify-content: space-around;
     max-width: 100%;
     width: 300px;
+    flex-wrap: wrap;
 }
 
 .redes__circulo {
     display: flex;
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     background-color: #dddddd;
+    flex-wrap: wrap;
 }
 
 .redes__icones {
-    height: 50px;
+    height: 40px;
     margin: auto;
     color: black;
+}
+
+.redes__icones:hover {
+    transition: all .6s ease;
+    transform: scale(1.1);
+    color: var(--laranja);
 }
 
 .sobre__itens {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .sobre__link {
     text-decoration: none;
     color: #AAAAAA;
+    font-family: Roboto;
 }
 
 .sobre__link:hover {
     color: #ffffff;
+    transition: all .45s ease;
 }
 
 .sobre__direitos {
     color: #ddd;
     margin-top: 1rem;
+    font-family: Roboto;
+    font-size: 1.2rem;
+}
+
+.logotipo__rodape {
+    width: 10rem;
+    height: auto;
 }

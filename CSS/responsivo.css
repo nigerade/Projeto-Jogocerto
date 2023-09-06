@@ -1,5 +1,6 @@
+/* RESPONSIVO MENU HAMBÚRGUER =================================== */
 @media (max-width: 920px) {
-    #header #header__menu{
+    #header #header__menu {
         display: block;
     }
 
@@ -38,3 +39,47 @@
         text-decoration: none;
     }
 }
+
+/* RESPONSIVO MENU HAMBÚRGUER =================================== */
+
+/* RESPONSIVO MAIN CSS ========================================== */
+@media (max-width: 640px) {
+    .ranking {
+        width: 400px;
+        transition: all .45s ease;
+    }
+}
+
+@media (max-width: 590px) {
+    .jogos__marcados {
+        width: 350px;
+        transition: all .45s ease;
+    }
+
+    .logotime {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 490px) {
+    .ranking {
+        width: 300px;
+        transition: all .45s ease;
+    }
+
+    .jogos__marcados {
+        width: 250px;
+        transition: all .45s ease;
+    }
+
+    .logotime {
+        width: 3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .text {
+        font-size: 3rem;
+    }
+}
+/* RESPONSIVO MAIN CSS ========================================== */
