@@ -10,6 +10,7 @@
     background-color: var(--cor-rodape);
     flex-wrap: wrap;
     padding: 1% 0;
+    z-index: -300;
 }
 
 .rodape__container {
