@@ -41,6 +41,16 @@
     font-size: 1.5rem;
 }
 
+.passos__link {
+    color: #0645AD;
+    font-weight: 500;
+}
+
+.passos__link:hover {
+    transition: all .45s ease;
+    color: var(--laranja)
+}
+
 .passos h3 {
     padding-bottom: 1em;
     font-size: 2em;

@@ -10,7 +10,7 @@
     background-color: var(--cor-rodape);
     flex-wrap: wrap;
     padding: 1% 0;
-    z-index: -300;
+    z-index: 0;
 }
 
 .rodape__container {
@@ -79,4 +79,9 @@
 .logotipo__rodape {
     width: 10rem;
     height: auto;
+}
+
+.logotipo__rodape:hover {
+    transition: all .45s ease;
+    transform: scale(1.1);
 }
