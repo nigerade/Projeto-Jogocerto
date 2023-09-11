@@ -140,14 +140,17 @@ main {
   align-items: center;
 }
 
-#icon {
-  font-size: 2rem;
-  align-items: center;
-}
-
 #nocolor {
   text-decoration: none;
   color: #000000;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+#nocolor:hover {
+  transition: all .45s ease;
+  color: var(--laranja);
+  transform: translateX(5px);
 }
 
 .agenda__titulo {
@@ -159,6 +162,7 @@ main {
   text-align: center;
   font-family: Roboto;
   margin-top: 10%;
+
 }
 
 #agenda__titulo__h1 {
