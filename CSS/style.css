@@ -18,6 +18,9 @@
     --cor-principal-header: #323232;
     --cor-font-principal-header: #ffffff;
     --cor-font-hover-header: #747474;
+    --color-third: #17171777;
+    --black-90: #000000e8;
+    --padding-descricao: .5rem;
 }
 
 body {

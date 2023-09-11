@@ -1,22 +1,20 @@
-* {
-    padding: 0;
-    margin: 0;
-    outline: none;
-}
+@import url(style.css);
 
-:root {
-    --color-third: #17171777;
-    --black-90: #000000e8;
-    --padding-descricao: .5rem;
+* {
+    font-family: Roboto;
 }
 
 .principal {
     width: 100%;
+    padding: 10rem 0 10rem 0;
 }
 
 .principal__titulo {
     text-align: center;
     font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center !important;
+    padding-bottom: 2.5rem;
 }
 
 /* Criação da classificação, onde pode ser encontrado nome, pontuações e lugar no ranking geral */
@@ -24,7 +22,7 @@
 .classificacao--container {
     background-color: var(--color-third);
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 200px;
     margin: 100px 0;
     color: #fff;
@@ -51,10 +49,30 @@
     font-weight: bold;
     gap: 10px;
     margin: 15px 0;
+
 }
 
 .classificacao__texto:not(:last-child) {
     width: 24px;
+}
+
+.classificacao__time--nome {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.classificacao__time--imagem {
+    width: 10rem;
+}
+
+.classificacao__texto--ranking {
+    font-size: 1.2rem;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.classificacao__texto--ranking-numero {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 /* Aqui se encontra os detalhes do time como região, modalidade, categoria, cores, responsavel */
@@ -71,7 +89,9 @@
 .descricao__container {
     width: 100%;
     display: flex;
+    padding: 0.5rem;
 }
+
 .descricao__container:nth-child(even) {
     background: #cecece;
 }
@@ -79,8 +99,8 @@
 .descricao__atributo {
     border-right: 1px solid #aaa;
     font-weight: bold;
-    padding:  var(--padding-descricao) ;
-    width: 30%; 
+    padding: var(--padding-descricao);
+    width: 30%;
 }
 
 .descricao__detalhes {
@@ -92,23 +112,28 @@
 
 /* Aqui apresentará a avaliação de outros times */
 
-.avaliacao{
+.avaliacao {
     display: flex;
     flex-flow: wrap;
+    flex-wrap: wrap;
     gap: 5px 32%;
-    margin: 20px auto;
+    margin: 4rem auto;
     width: 70%;
-    min-width: 300px;
-    height: 105px;
+    height: 10rem;
 }
 
-.avaliacao__container{
+.avaliacao__container {
     display: flex;
     width: 34%;
+    padding: 1rem;
 }
 
-
-.avaliacao__texto{
+.avaliacao__texto {
     width: 20%;
     min-width: 90px;
+    font-size: 1.1rem;
+}
+
+.avaliacao__estrelas {
+    padding-left: 2rem;
 }

@@ -2,24 +2,61 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Perfil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/responsivo.css">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/perfil__time.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>JogoCerto - 2023</title>
 </head>
 
 <body>
 
+    <!-- COMEÇO HEADER -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="div__header">
+                <a class="logo" href="index.html"><img class="logotipo" src="../IMAGES/logo.png"></a>
+
+                <ul class="navlist__header">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Ranking">Ranking</a></li>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+
+            <ul class="navlist__header">
+                <li><a href="#">Login</a></li>
+
+                <div class="cadastro">
+                    <li><a href="HTML/Bem-vindos.html">Cadastre-se</a></li>
+                </div>
+            </ul>
+
+            <div class="bx bx-menu" id="header__menu" onclick="menuShow()"></div>
+        </nav>
+
+    </header>
+    <!-- FIM HEADER -->
+
     <main class="principal">
-        <h1 class="principal__titulo">Equipe Bar Sem Lona</h1>
+        <h1 class="principal__titulo">Bem-Vindo Bar Sem Lona!</h1>
 
         <section class="classificacao--container">
 
             <div class="classificacao">
 
-                <img src="./barSemLona.png" alt="logo do time" class="classificacao__time--imagem">
+                <img src="../IMAGES/logo.png" alt="logo do time" class="classificacao__time--imagem">
 
                 <h3 class="classificacao__time--nome">Bar Sem Lona</h3>
 
@@ -55,7 +92,9 @@
                     </div>
 
                 </div>
-                <p class="classificacao__texto">Ranking Geral <br/> 20° </p>
+                <p class="classificacao__texto--ranking">Ranking Geral<br />
+                <p class="classificacao__texto--ranking-numero">20°</p>
+                </p>
             </div>
         </section>
 
@@ -93,10 +132,10 @@
                     <p class="descricao__texto">Cores:</p>
                 </div>
                 <div class="descricao__detalhes">
-            
+
                 </div>
             </div>
-            
+
             <div class="descricao__container">
                 <div class="descricao__atributo">
                     <p class="descricao__texto">Região:</p>
@@ -106,7 +145,7 @@
                 </div>
             </div>
 
-            
+
             <div class="descricao__container">
                 <div class="descricao__atributo">
                     <p class="descricao__texto">Modalidade:</p>
@@ -116,7 +155,7 @@
                 </div>
             </div>
 
-            
+
             <div class="descricao__container">
                 <div class="descricao__atributo">
                     <p class="descricao__texto">Sexo:</p>
@@ -126,7 +165,7 @@
                 </div>
             </div>
 
-            
+
             <div class="descricao__container">
                 <div class="descricao__atributo">
                     <p class="descricao__texto">Categoria:</p>
@@ -136,7 +175,7 @@
                 </div>
             </div>
 
-            
+
             <div class="descricao__container">
                 <div class="descricao__atributo">
                     <p class="descricao__texto">Classificação:</p>
@@ -148,8 +187,9 @@
 
         </section>
 
+
+
         <section class="avaliacao">
-            
             <div class="avaliacao__container">
                 <p class="avaliacao__texto">Oponente</p>
                 <div class="avaliacao__estrelas">⭐⭐⭐⭐⭐</div>
@@ -159,7 +199,7 @@
                 <p class="avaliacao__texto">Disciplina</p>
                 <div class="avaliacao__estrelas">⭐⭐⭐⭐⭐</div>
             </div>
-            
+
             <div class="avaliacao__container">
                 <p class="avaliacao__texto">Pontualidade</p>
                 <div class="avaliacao__estrelas">⭐⭐⭐⭐⭐</div>
@@ -184,20 +224,11 @@
                 <p class="avaliacao__texto">Uniforme</p>
                 <div class="avaliacao__estrelas">⭐⭐⭐⭐⭐</div>
             </div>
-
-            
-
-           
-
-            
-
         </section>
-
     </main>
 
-
-
-
+    <script src="../JS/header.js"></script>
+    <script src="../JS/script.js"></script>
 
 </body>
 
