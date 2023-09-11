@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+:root {
+    --color-third: #17171777;
+    --black-90: #000000e8;
+    --padding-descricao: .5rem;
+}
+
+.principal {
+    width: 100%;
+}
+
+.principal__titulo {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Criação da classificação, onde pode ser encontrado nome, pontuações e lugar no ranking geral */
+
+.classificacao--container {
+    background-color: var(--color-third);
+    position: relative;
+    width: 100vw;
+    height: 200px;
+    margin: 100px 0;
+    color: #fff;
+}
+
+.classificacao {
+    align-items: center;
+    background: var(--black-90);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
+
+.classificacao__placar {
+    display: flex;
+    font-weight: bold;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.classificacao__texto:not(:last-child) {
+    width: 24px;
+}
+
+/* Aqui se encontra os detalhes do time como região, modalidade, categoria, cores, responsavel */
+
+.descricao {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid;
+}
+
+.descricao__container {
+    width: 100%;
+    display: flex;
+}
+.descricao__container:nth-child(even) {
+    background: #cecece;
+}
+
+.descricao__atributo {
+    border-right: 1px solid #aaa;
+    font-weight: bold;
+    padding:  var(--padding-descricao) ;
+    width: 30%; 
+}
+
+.descricao__detalhes {
+    color: #444;
+    font-weight: bold;
+    padding: var(--padding-descricao);
+    width: 70%;
+}
+
+/* Aqui apresentará a avaliação de outros times */
+
+.avaliacao{
+    display: flex;
+    flex-flow: wrap;
+    gap: 5px 32%;
+    margin: 20px auto;
+    width: 70%;
+    min-width: 300px;
+    height: 105px;
+}
+
+.avaliacao__container{
+    display: flex;
+    width: 34%;
+}
+
+
+.avaliacao__texto{
+    width: 20%;
+    min-width: 90px;
+}
